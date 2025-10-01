@@ -1,0 +1,14 @@
+[Unit]
+Description=display-ip
+After=network-online.target
+
+[Service]
+Type=simple
+User=jason
+WorkingDirectory=/home/jason/cps-lab2
+ExecStart=/home/jason/cpsy/bin/python /home/jason/cps-lab2/display-ip.py
+Restart=on-failure
+SupplementaryGroups=i2c
+
+[Install]
+WantedBy=multi-user.target
