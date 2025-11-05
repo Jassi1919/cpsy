@@ -1,4 +1,3 @@
-# PID_following.py
 from gpiozero import Robot, Motor, DigitalOutputDevice
 import time
 import board
